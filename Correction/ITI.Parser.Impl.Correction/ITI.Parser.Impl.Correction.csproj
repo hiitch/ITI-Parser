@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <AssemblyName>ITI.Parser.Impl</AssemblyName>
+    <RootNamespace>ITI.Parser</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ITI.Parser.Model\ITI.Parser.Model.csproj" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy $(TargetPath) $(SolutionDir)\..\ITI.Parser.Impl\$(OutDir) /e /y" />
+  </Target>
+
+</Project>

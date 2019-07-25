@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <AssemblyName>ITI.Parser.Impl</AssemblyName>
+    <RootNamespace>ITI.Parser</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ITI.Parser.Model\ITI.Parser.Model.csproj" />
+  </ItemGroup>
+
+</Project>
